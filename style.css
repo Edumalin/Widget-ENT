@@ -1,0 +1,15 @@
+body{
+    margin:0;
+    background-color: #E8E8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.widget{
+    width: 400px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: white;
+}
