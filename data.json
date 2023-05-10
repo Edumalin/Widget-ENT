@@ -1,0 +1,20 @@
+[
+    {
+        "type":"webinaire",
+        "image":"slide2.png",
+        "title":"Initiation aux outils Edumalin",
+        "description":"Suivez notre webinaire et apprenez en quelques clics à mettre en place votre premiers parcours et assigner des travaux aux élèves"
+    },
+    {
+        "type":"webinaire",
+        "image":"slide1.png",
+        "title":"Développer une stratégie d'apprentissage",
+        "description":"Suivez notre webinaire pour appréhender les différentes étapes d'une stratégie d'apprentissage efficace."
+    },
+    {
+        "type":"webinaire",
+        "image":"slide2.png",
+        "title":"Un jour chez Edumalin",
+        "description":"Vous aimez Edumalin? Venez rencontrer le personnel qui travail sur les outils dans leur quotidien"
+    }
+]

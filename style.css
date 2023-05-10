@@ -5,11 +5,89 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Calibri;
 }
 
 .widget{
     width: 400px;
-    height: 250px;
+    height: 150px;
     border-radius: 8px;
     background-color: white;
+    box-shadow: 2px 2px 6px 2px #808080;
+}
+
+.diapo{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    overflow: hidden;
+    position:relative;
+}
+
+.slide{
+    padding: 12px;
+    box-sizing: border-box;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide .content{
+    display: flex;
+    gap: 10px;
+}
+
+.slide .picture{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slide .details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide .picture img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.slide .title{
+    color: #1565c0;
+    font-size: 24px;
+}
+
+.slide .type{
+    font-size: 16px;
+    color: #8c2aa0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.slide .type i{
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.dot-list{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.dot{
+    width:8px;
+    height: 8px;
+    background-color: grey;
+    border-radius: 50%;
 }
