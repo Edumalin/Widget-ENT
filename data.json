@@ -1,9 +1,15 @@
 [
     {
+        "type":"raccourcis",
+        "image":"slide2.png",
+        "title":"Rejoindre Edumalin",
+        "description":"Venez découvrir Edumalin, nos parcours et module, l'ensemble des matières et importez vos propre cours pour suivre le travail des élèves."
+    },
+    {
         "type":"webinaire",
         "image":"slide2.png",
         "title":"Initiation aux outils Edumalin",
-        "description":"Suivez notre webinaire et apprenez en quelques clics à mettre en place votre premiers parcours et assigner des travaux aux élèves"
+        "description":"Suivez notre webinaire et apprenez en quelques clics à mettre en place votre premiers parcours et assigner des travaux aux élèves.Suivez notre webinaire et apprenez en quelques clics à mettre en place votre premiers parcours et assigner des travaux aux élèves"
     },
     {
         "type":"webinaire",

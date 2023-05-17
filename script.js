@@ -14,14 +14,14 @@ fetch("./data.json")
                                 <img src="${slide.image}">
                             </div>
                             <div class="details">
-                                <div class="description">${slide.description}</div>
+                                <div class="description" title="${slide.description}">${slide.description}</div>
                                 <div class="type">
-                                    <i class="fa-solid fa-video"></i>
-                                    ${slide.type}
+                                    ${getType(slide.type)}
                                 </div>
                             </div>
                         </div>
-                        <a class="subscribe" href="/inscription.html" target="_blank">Je participe</a>
+                        ${getButton(slide.type)}
+                        
                     </div>`;
                     dot += `<div class="dot"></div>`
         }
@@ -48,4 +48,29 @@ fetch("./data.json")
         document.querySelectorAll(".slide").forEach(slide => slide.style.transform = `translate(-${translate}px,0px)`);
         document.querySelector(`.dot.active`).classList.remove("active");
         document.querySelector(`.dot:nth-child(${translate/400+1})`).classList.add("active");
+    }
+
+    function getType(type){
+        switch(type){
+            case "webinaire":
+                return `<i class="fa-solid fa-video"></i>${type}`;
+                break;
+            case "raccourcis":
+                return "";
+                break;
+
+        }
+    }
+
+    function getButton(type){
+        switch(type){
+            case "webinaire":
+                return `<a class="subscribe" href="/inscription.html" target="_blank">Je participe</a>`;
+                break;
+            case "raccourcis":
+                return `<a class="join" href="/inscription.html" target="_blank">Je découvre</a>`;
+                break;
+
+        }
+        
     }
